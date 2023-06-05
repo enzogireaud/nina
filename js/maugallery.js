@@ -144,7 +144,9 @@
           index = i;
         }
       });
-      prev = imagesCollection[index - 1] || imagesCollection[0];
+      prev =
+        imagesCollection[index - 1] ||
+        imagesCollection[imagesCollection.length - 1];
       $(".lightboxImage").attr("src", $(prev).attr("src"));
     },
 
